@@ -1,0 +1,17 @@
+
+
+.pageContainer{
+    flex: 80%;
+    min-width: 400px;
+    text-align: center;
+}
+
+.compItem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    min-height: 100px;
+    margin-top: 50px;
+    /* background-color: #ccc; */
+}

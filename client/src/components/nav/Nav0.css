@@ -14,9 +14,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 8px;
     background-color: teal;
     color: #fff;
+
+    z-index: 2;
 }
 .nav-links a {
     color: #fff;

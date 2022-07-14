@@ -7,7 +7,7 @@ function Nav0() {
     return (
         <nav className="nav0">
 
-        <div className="logo">MUO</div>
+        <div className="logo">UTIL-WEBAPP</div>
 
         <ul className="nav-links">
 

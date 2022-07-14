@@ -29,8 +29,8 @@ module.exports = {
 
     // This enables webpack-dev-server cross-origin-isolated and set to yes for shared array buffer err...
     headers: {
-      "Cross-Origin-Embedder-Policy": "require-corp",
-      "Cross-Origin-Opener-Policy": "same-origin",
+      // "Cross-Origin-Embedder-Policy": "require-corp",
+      // "Cross-Origin-Opener-Policy": "same-origin",
     },
   },
   

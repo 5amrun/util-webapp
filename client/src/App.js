@@ -1,27 +1,32 @@
+import { useContext } from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 import Nav0 from './components/nav/Nav0.js';
+import Sidebar0 from './components/nav/Sidebar0';
+import {PageContext, PageContextProvider} from './context.js';
+import PageContainer from './PageContainer';
+
 
 
 function App() {
+
+  const pageList = ['apps', 'layouts','navigation'];
+
   return (
     <div className="App">
-      <Nav0></Nav0>
+      <Nav0 />
 
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PageContextProvider defaultVal={pageList[0]} pageList={pageList}>
+        <div className='appContainer'>
+          
+          <Sidebar0 />
+
+          <PageContainer />
+
+        </div>
+      </PageContextProvider>
+
     </div>
   );
 }
